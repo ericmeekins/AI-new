@@ -41,8 +41,8 @@ export function HeroSection() {
                 <span className="text-gray-900">Your Guide to the</span>
                 <span className="bg-gradient-to-r from-blue-600 to-pink-600 bg-clip-text text-transparent">
                   World of AI
-                </span>
-              </h1>
+            </span>
+          </h1>
 
               <p className="text-xl text-gray-600 leading-relaxed max-w-lg">
                 Your premier source for deep dives, tutorials, and the latest news in the rapidly evolving field of Artificial Intelligence. Join our community of learners and innovators.
@@ -52,11 +52,11 @@ export function HeroSection() {
             {/* CTA Button */}
             <div className="flex items-center space-x-4">
               <Button asChild size="lg" className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-3 text-lg">
-                <Link href="/blog">
+              <Link href="/blog">
                   Explore The Blog
-                  <ArrowRight className="w-5 h-5 ml-2" />
-                </Link>
-              </Button>
+                <ArrowRight className="w-5 h-5 ml-2" />
+              </Link>
+            </Button>
             </div>
 
             {/* Features */}
