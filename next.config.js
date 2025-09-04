@@ -1,7 +1,5 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  distDir: 'out',
-  trailingSlash: true,
   images: {
     unoptimized: true,
     domains: [
@@ -36,6 +34,7 @@ const nextConfig = {
 };
 
 module.exports = nextConfig;
+ 
 
 
 
