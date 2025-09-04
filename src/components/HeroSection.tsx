@@ -16,9 +16,9 @@ export function HeroSection() {
       </div>
 
       <div className="container mx-auto px-4 pt-20 pb-16">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-1 gap-12 items-center">
           {/* Left Content */}
-          <div className="space-y-8">
+          <div className="space-y-8 text-center lg:text-left">
             {/* Announcement */}
             <div className="inline-flex items-center gap-2 bg-purple-100 text-purple-700 px-4 py-2 rounded-full text-sm font-medium">
               <Sparkles className="w-4 h-4" />
@@ -86,73 +86,9 @@ export function HeroSection() {
               </Card>
             </div>
           </div>
-
-          {/* Right Content - Demo Interface */}
-          <div className="relative">
-            {/* Main Demo Card */}
-            <Card className="p-6 bg-white/80 backdrop-blur-sm shadow-2xl transform rotate-3">
-              <div className="space-y-4">
-                <div className="flex items-center justify-between">
-                  <h3 className="font-semibold">Collaboration Board</h3>
-                  <div className="flex items-center space-x-2">
-                    <div className="w-6 h-6 bg-purple-500 rounded-full"></div>
-                    <div className="w-6 h-6 bg-blue-500 rounded-full"></div>
-                    <span className="text-sm text-gray-500">Co-creating</span>
-                  </div>
-                </div>
-
-                <div className="grid grid-cols-3 gap-3">
-                  <div className="h-16 bg-pink-200 rounded-lg flex items-center justify-center">
-                    <span className="text-sm font-medium">To Do</span>
-                  </div>
-                  <div className="h-16 bg-yellow-200 rounded-lg flex items-center justify-center">
-                    <span className="text-sm font-medium">In Progress</span>
-                  </div>
-                  <div className="h-16 bg-purple-200 rounded-lg flex items-center justify-center">
-                    <span className="text-sm font-medium">Done</span>
-                  </div>
-                </div>
-
-                <div className="flex items-center justify-between text-sm text-gray-500">
-                  <span>Updated 2 minutes ago</span>
-                  <div className="flex items-center space-x-1">
-                    <Users className="w-4 h-4" />
-                    <span>3 users online</span>
-                  </div>
-                </div>
-              </div>
-            </Card>
-
-            {/* Floating AI Card */}
-            <Card className="absolute -top-4 -right-4 p-4 bg-white shadow-lg transform -rotate-12 w-48">
-              <div className="space-y-3">
-                <div className="flex items-center space-x-2">
-                  <div className="w-8 h-8 bg-gradient-to-br from-purple-500 to-blue-500 rounded-full flex items-center justify-center">
-                    <Sparkles className="w-4 h-4 text-white" />
-                  </div>
-                  <span className="font-semibold text-sm">AI Assistant</span>
-                </div>
-                <p className="text-xs text-gray-600">Generating a mind map for you...</p>
-                <div className="w-full bg-purple-100 rounded-full h-2">
-                  <div className="bg-purple-500 h-2 rounded-full w-3/4"></div>
-                </div>
-              </div>
-            </Card>
-
-            {/* Theme selector */}
-            <Card className="absolute bottom-4 left-4 p-3 bg-white shadow-lg w-32">
-              <div className="space-y-2">
-                <span className="text-xs font-semibold">Theme</span>
-                <div className="flex space-x-2">
-                  <div className="w-6 h-6 bg-purple-500 rounded border-2 border-purple-600"></div>
-                  <div className="w-6 h-6 bg-blue-500 rounded"></div>
-                  <div className="w-6 h-6 bg-gray-500 rounded"></div>
-                </div>
-              </div>
-            </Card>
-          </div>
         </div>
       </div>
     </section>
   );
 }
+
