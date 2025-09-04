@@ -2,7 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { ArrowRight, Sparkles, Users, Brain, Zap } from "lucide-react";
+import { ArrowRight, Sparkles, Brain, Zap } from "lucide-react";
 import Link from "next/link";
 
 export function HeroSection() {
@@ -41,8 +41,8 @@ export function HeroSection() {
                 <span className="text-gray-900">Your Guide to the</span>
                 <span className="bg-gradient-to-r from-blue-600 to-pink-600 bg-clip-text text-transparent">
                   World of AI
-            </span>
-          </h1>
+                </span>
+              </h1>
 
               <p className="text-xl text-gray-600 leading-relaxed max-w-lg">
                 Your premier source for deep dives, tutorials, and the latest news in the rapidly evolving field of Artificial Intelligence. Join our community of learners and innovators.
@@ -91,62 +91,3 @@ export function HeroSection() {
     </section>
   );
 }
-
-
-
-                <div className="grid grid-cols-3 gap-3">
-                  <div className="h-16 bg-pink-200 rounded-lg flex items-center justify-center">
-                    <span className="text-sm font-medium">To Do</span>
-                  </div>
-                  <div className="h-16 bg-yellow-200 rounded-lg flex items-center justify-center">
-                    <span className="text-sm font-medium">In Progress</span>
-                  </div>
-                  <div className="h-16 bg-purple-200 rounded-lg flex items-center justify-center">
-                    <span className="text-sm font-medium">Done</span>
-                  </div>
-                </div>
-
-                <div className="flex items-center justify-between text-sm text-gray-500">
-                  <span>Updated 2 minutes ago</span>
-                  <div className="flex items-center space-x-1">
-                    <Users className="w-4 h-4" />
-                    <span>3 users online</span>
-                  </div>
-                </div>
-              </div>
-            </Card>
-
-            {/* Floating AI Card */}
-            <Card className="absolute -top-4 -right-4 p-4 bg-white shadow-lg transform -rotate-12 w-48">
-              <div className="space-y-3">
-                <div className="flex items-center space-x-2">
-                  <div className="w-8 h-8 bg-gradient-to-br from-purple-500 to-blue-500 rounded-full flex items-center justify-center">
-                    <Sparkles className="w-4 h-4 text-white" />
-                  </div>
-                  <span className="font-semibold text-sm">AI Assistant</span>
-                </div>
-                <p className="text-xs text-gray-600">Generating a mind map for you...</p>
-                <div className="w-full bg-purple-100 rounded-full h-2">
-                  <div className="bg-purple-500 h-2 rounded-full w-3/4"></div>
-                </div>
-              </div>
-            </Card>
-
-            {/* Theme selector */}
-            <Card className="absolute bottom-4 left-4 p-3 bg-white shadow-lg w-32">
-              <div className="space-y-2">
-                <span className="text-xs font-semibold">Theme</span>
-                <div className="flex space-x-2">
-                  <div className="w-6 h-6 bg-purple-500 rounded border-2 border-purple-600"></div>
-                  <div className="w-6 h-6 bg-blue-500 rounded"></div>
-                  <div className="w-6 h-6 bg-gray-500 rounded"></div>
-                </div>
-              </div>
-            </Card>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-}
-
