@@ -1,3 +1,5 @@
+import { Footer } from "@/components/Footer";
+import { Header } from "@/components/Header";
 import type { Metadata } from "next";
 import { Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
@@ -33,12 +35,15 @@ export default function RootLayout({
           crossOrigin="anonymous"
         ></script>
       </head>
-      <body suppressHydrationWarning>
+      <body
+        suppressHydrationWarning
+        className="relative flex min-h-screen flex-col"
+      >
         <ClientBody>
-          <div className="relative flex min-h-screen flex-col">
-            <div className="gradient-bg" />
-            {children}
-          </div>
+          <div className="gradient-bg" />
+          <Header />
+          <main className="flex-grow">{children}</main>
+          <Footer />
         </ClientBody>
       </body>
     </html>
