@@ -19,16 +19,6 @@ export function HeroSection() {
         <div className="grid lg:grid-cols-1 gap-12 items-center">
           {/* Left Content */}
           <div className="space-y-8 text-center lg:text-left">
-            {/* Announcement */}
-            <div className="inline-flex items-center gap-2 bg-purple-100 text-purple-700 px-4 py-2 rounded-full text-sm font-medium">
-              <Sparkles className="w-4 h-4" />
-              <span>Explore the Future of AI, Today.</span>
-              <Link href="/blog" className="text-purple-500 hover:underline">
-                Read our latest articles
-              </Link>
-              <ArrowRight className="w-4 h-4" />
-            </div>
-
             {/* Main Heading */}
             <div className="space-y-4">
               <h1 className="text-5xl lg:text-6xl font-bold leading-tight">
