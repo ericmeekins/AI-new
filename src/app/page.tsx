@@ -7,6 +7,7 @@ import { LatestPosts } from "@/components/LatestPosts";
 export default function Home() {
   return (
     <>
+      {/* Trigger deployment */}
       <HeroSection />
       <Cards />
       <ActionSection />
