@@ -1,3 +1,4 @@
+// src/app/blog/page.tsx
 import { Card } from "@/components/Card";
 import { posts } from "@/lib/posts";
 import { JetBrains_Mono } from "next/font/google";
@@ -20,7 +21,8 @@ export default function Blog() {
         <p className="mt-4 text-xl">
           Here you can find all the articles of the blog.
         </p>
-        </div>
+      </div>
+
       <div className="mb-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
         {posts.map((post) => (
           <Card
@@ -32,7 +34,7 @@ export default function Blog() {
             excerpt={post.excerpt}
           />
         ))}
-        </div>
       </div>
+    </div>
   );
 }
