@@ -24,7 +24,11 @@ export const posts: Post[] = [
       <h2>Conclusion</h2>
       <p>A summary of the key points.</p>
     `,
-  },
+  slug: "pplx-ai-search",
+  title: "Perplexity Pro — The AI Search Tool That’s Changing the Game",
+  date: "Oct 30, 2025",
+  excerpt: "Discover how Perplexity Pro combines real-time web search and GPT-level intelligence to deliver accurate, cited, and up-to-date answers instantly.",
+  author: "AI Insights Team",},
   {
     slug: 'getting-started-with-generative-ai',
     title: 'Getting Started with Generative AI for Content Creation',
